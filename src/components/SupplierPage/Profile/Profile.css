@@ -1,0 +1,86 @@
+.subHeader{
+    color: gray;
+    font-size: 14px;
+    margin-top: -220px;
+    margin-bottom: 80px;
+}
+
+.h2-profile{
+    margin-top: 55px;
+    margin-bottom: -1px;
+}
+
+.profileLabel{
+    margin-right: 20px;
+    color: gray;
+}
+
+.profileLabel2{
+    margin-right: 80px;
+    color: gray;
+}
+
+.profileInput{
+    width: 50%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;  
+}
+
+.profileInput2{
+    width: 24.7%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;  
+}
+
+.profileSelect{
+    width: 50%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;  
+}
+
+.profileSelect:focus{
+    outline: none;
+    border-color: red;
+}
+
+.profileInput:focus{
+    outline: none;
+    border-color: red;
+}
+
+.profileInput2:focus{
+    outline: none;
+    border-color: red;
+}
+
+.spacer{
+    margin-bottom: 40px;
+}
+
+.btnSaveProfile{
+    float: right;
+    margin-right: 130px;
+    border-radius: 15px;
+    background: #13d172;
+    white-space: nowrap;
+    padding: 8px 22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    transition: 450ms;
+}
+
+
+.btnSaveProfile:hover {
+    background: #0fac5d;
+    transition: 450ms;
+    color: #FFF;
+}
