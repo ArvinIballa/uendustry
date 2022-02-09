@@ -15,7 +15,7 @@ export const ContainerBG = styled.div`
   align-items: center;
   justify-content: center;
   min-width: 480px;
-  min-height: 909px;
+  min-height: 1000px;
 `;
 
 

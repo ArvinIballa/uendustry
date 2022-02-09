@@ -5,6 +5,7 @@ import { IMAGES } from '../navs/assets';
 
 import { Container, ContainerLeft, Image2Left, Image2LeftDesc, Image2LeftDiv, ImageLeft, ImageLeftDesc, NewsContainerLeft, NewsTitle,
 Image3LeftDiv,Image3Left,Image3LeftDesc, Image4Left,Image4LeftDesc,Image4LeftDiv , ContainerRight, TitleRightDiv, TitleRight, AuthorRightDiv, AuthorRight, DateRightDiv, DateRight, ImageRightPos, ImageRight, DescRightDiv, DescRight, NewsTitleDiv} from './elements-pages/NewsElements';
+import Navbar from '../navs/Headers/Navbar';
 
 
 
@@ -20,7 +21,7 @@ const News = () => {
 ]
   return (
   <>
-        <Headers/>
+        <Navbar/>
         <Container>
           <ContainerLeft>
             <NewsTitleDiv>

@@ -9,6 +9,7 @@ import { Container,MainWrapper, ContainerLeft,ContainerRight, DescriptionDiv, Ti
 , ContainerAll, ButtonDiv, Button1, CategoriesBG, PartnerBG, IconDiv, Icon,
 Prod2Div, Prod3Div,Prod4Div, Prod5Div,Prod6Div,Prod7Div, Prod1Div, CategoriesDiv, CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv} from './elements-pages/HomeElements';
 import { IMAGES } from '../navs/assets';
+import Navbar from '../navs/Headers/Navbar';
 
 const Home = () => {
 
@@ -46,7 +47,7 @@ const Home = () => {
 
   return (
   <>
-     <Headers/>
+     <Navbar/>
       <ContainerAll>
       <Container>
     

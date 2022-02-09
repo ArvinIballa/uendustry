@@ -4,6 +4,7 @@ import Headers from '../navs/Headers/Headers';
 import { Carousel } from 'react-bootstrap';
 import { ContainerBG,CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv, ContainerLeft, TitleDiv, Title, ImageLeft, ImageLeftDesc, Container2nd} from './elements-pages/OurPartnerElements';
 import { IMAGES } from '../navs/assets';
+import Navbar from '../navs/Headers/Navbar';
  const OurPartners = () => {
 
     
@@ -22,7 +23,7 @@ import { IMAGES } from '../navs/assets';
 
   return (
       <>
-          <Headers/>
+          <Navbar/>
           <ContainerBG>
                                 <div >
                                 <OurPartnerTitleDIV>
@@ -46,7 +47,7 @@ import { IMAGES } from '../navs/assets';
                         <Carousel.Item>
                             <img
                         
-                            
+                            className="d-block w-100" 
                             src={cardData[8].icon}
                             alt="Second slide"
                             />

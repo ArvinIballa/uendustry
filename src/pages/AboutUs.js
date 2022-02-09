@@ -5,6 +5,7 @@ import Footers from '../navs/Footers/Footers';
 import { AboutUsDescription, AboutUsTitle, ContainerBG, ContainerDiv, Icon } from './elements-pages/AboutUsElements';
 
 import { IMAGES } from '../navs/assets';
+import Navbar from '../navs/Headers/Navbar';
 
 
 
@@ -18,7 +19,7 @@ const AboutUs = () =>  {
    
   return (
   <>
-    <Headers/>
+    <Navbar/>
       <ContainerBG>
          {/* <ContainerDiv>
                   <Icon src={cardData[0].icon}></Icon>
