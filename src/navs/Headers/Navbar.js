@@ -52,10 +52,10 @@ function Navbar() {
           </div>
         </div>
         
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
-              <Link to='#' className='menu-bars'>
+        <nav className={sidebar ? 'nav-menu2 active' : 'nav-menu2'}>
+          <ul className='nav-menu-items2' onClick={showSidebar}>
+            <li className='navbar-toggle2'>
+              <Link to='#' className='menu-bars2'>
                 <AiIcons.AiOutlineClose />
               </Link>
            

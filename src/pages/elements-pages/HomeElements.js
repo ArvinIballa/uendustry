@@ -8,7 +8,8 @@ export const ContainerAll = styled.div`
  
   flex:1;
  
- 
+  max-width: 100%;
+    overflow-x: hidden;
 `;
 
 export const Container = styled.div`
