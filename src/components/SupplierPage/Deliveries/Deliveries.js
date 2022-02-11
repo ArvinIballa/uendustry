@@ -16,21 +16,25 @@ const DeliveriesProfile = () => {
         <Navbar></Navbar>
         <Container>
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css"></link>
           <div className='h2-wrapper'>  
             <h2>My Deliveries
               <input
                 className='searchInput'
+                placeholder= "&#xf002; Search"
+                style={{fontFamily:'FontAwesome, sans-serif'}}
+                type='text'
               ></input></h2>
           </div>
           <div className="containerTable">             
             <div className="tableWrapper">
               <table>
                 <tr>
-                  <th scope="col">Order ID</th>
-                  <th scope="col">Client Name</th>
-                  <th scope="col">Status</th>
-                  <th style={{textAlign:'center'}} scope="col">Address</th>
-                  <th style={{textAlign:'center'}}>Action</th>
+                  <th className='thDeliveries' scope="col">Order ID</th>
+                  <th className='thDeliveries' scope="col">Client Name</th>
+                  <th className='thDeliveries' scope="col">Status</th>
+                  <th className='thDeliveries' style={{textAlign:'center'}} scope="col">Address</th>
+                  <th className='thDeliveries' style={{textAlign:'center'}}>Action</th>
                 </tr>
               
                     <tr>

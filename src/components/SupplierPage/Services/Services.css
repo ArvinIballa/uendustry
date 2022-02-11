@@ -139,7 +139,7 @@ table, th, td {
     font-size: 16px;
 }
 
-th{
+.thServices{
     top: 0;
     background: #fa2d2d;
     color: #fff;

@@ -5,6 +5,7 @@ import SupplierProfile from './components/SupplierPage/Profile/Profile';
 import SupplierInventory from './components/SupplierPage/Inventory/Inventory'
 import SupplierServices from './components/SupplierPage/Services/Services'
 import SupplierDeliveries from './components/SupplierPage/Deliveries/Deliveries'
+import SupplierTransaction from './components/SupplierPage/Transaction/Transaction'
 
 import Home from './pages/Home'
 import HowitWorks from './pages/HowitWorks'
@@ -15,7 +16,6 @@ import OurPartners from './pages/OurPartners'
 import News from './pages/News'
 import Blogs from './pages/Blogs'
 import SignUp from './pages/SignUp'
-
 
 
 function App() {
@@ -39,6 +39,7 @@ function App() {
           <Route path="/Supplier/Inventory" element={<SupplierInventory/>} exact />
           <Route path="/Supplier/Services" element={<SupplierServices/>} exact />
           <Route path="/Supplier/Deliveries" element={<SupplierDeliveries/>} exact />
+          <Route path="/Supplier/Transactions" element={<SupplierTransaction/>} exact />
       </Routes>
     </Router>
     

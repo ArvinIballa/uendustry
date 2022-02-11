@@ -117,11 +117,11 @@ const SupplierProfile = () => {
             <div className="tableWrapper">
               <table>
                 <tr>
-                  <th scope="col">Item Number</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Quantity</th>
-                  <th>Action</th>
+                  <th className='thServices' scope="col">Item Number</th>
+                  <th className='thServices' scope="col">Description</th>
+                  <th className='thServices' scope="col">Price</th>
+                  <th className='thServices' scope="col">Quantity</th>
+                  <th className='thServices'>Action</th>
                 </tr>
               
                     <tr>

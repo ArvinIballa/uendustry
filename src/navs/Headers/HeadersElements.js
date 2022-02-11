@@ -27,6 +27,6 @@ background-color: #fff;
 
 export const NavbarLogoDiv = styled.div`
 width:700px;
-border-Right: 1px solid gray;
+border-right: 1px solid gray;
 margin-left: 20px;
 `

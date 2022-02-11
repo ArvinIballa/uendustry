@@ -15,22 +15,39 @@
     color: red;
 }
 
-.searchInput{
+.searchTransaction{
     border-radius: 10px;
-    float: right;
+    width: 100%;
+    margin-bottom: 20px;
     font-size: 16px;
     padding: 10px;
     border: 1px solid red;
 }
 
-.searchInput:focus {
+.searchTransaction:focus {
     outline: none;
     box-shadow: 0px 0px 7px red;
     border-color: red;
 }
 
-.tablePic{
-    width: 100%;
+.searchTableTransaction{
+    border-radius: 10px;
+    width: 15%;
+    margin: 10px;
+    font-size: 12px;
+    padding: 8px;
+    border: 1px solid red;
+    float: right;
+}
+
+.searchTableTransaction:focus {
+    outline: none;
+    box-shadow: 0px 0px 7px red;
+    border-color: red;
+}
+
+.tablePicTransaction{
+     width: 9%;
 }
 
 .btnTable:hover {
@@ -40,69 +57,74 @@
 }
 
 
-.btnEdit {
-    margin-right: 5px;
+.btnInProgress {
+    margin: 10px;
     border-radius: 15px;
-    background: #1569C7;
+    background: orange;
     white-space: nowrap;
     padding: 8px 22px;
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    transition: 450ms;
-}
-
-
-.btnEdit:hover {
-    background: #034897;
-    transition: 450ms;
-    color: #FFF;
-}
-
-.btnClose{
-    margin-right: 5px;
-    border-radius: 15px;
-    background: #f56c6c;
-    white-space: nowrap;
-    padding: 8px 22px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    transition: 450ms;
-}
-
-.btnClose:hover {
-    background: #f12c2c;
-    transition: 450ms;
-    color: #FFF;
-}
-
-.modalBtn {
-    float: right;
-    margin-left: 330px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.modalBtn:hover{
-    color:red
-}
-
-.descDescServices{
     font-size: 12px;
-    color: gray;
-    max-inline-size: 390px;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    transition: 450ms;
+    float: right;
+}
+
+
+.btnDelivered {
+    margin: 10px;
+    border-radius: 15px;
+    background: green;
+    white-space: nowrap;
+    padding: 8px 22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    transition: 450ms;
+    float: right;
+}
+
+
+.btnCancelled {
+    margin: 10px;
+    border-radius: 15px;
+    background: red;
+    white-space: nowrap;
+    padding: 8px 22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    transition: 450ms;
+    float: right;
+}
+
+
+
+
+.storeLabel{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.subStoreLabel{
+    color: red;
+    font-size: 0.7rem;
+    margin-left: 10px;
+    padding: 5px;
 }
 
 .tableAddress{
@@ -142,12 +164,12 @@ table, th, td {
     font-size: 16px;
 }
 
-.thDeliveries{
+.thTransaction{
     top: 0;
-    background: #fa2d2d;
-    color: #fff;
+    color: #000;
     font-size: 18px;
-
+    text-align: center;
+    cursor: pointer;
 }
 
 table tr:nth-of-type(even) {
