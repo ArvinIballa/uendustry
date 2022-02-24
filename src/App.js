@@ -10,6 +10,7 @@ import SupplierTransaction from './components/SupplierPage/Transaction/Transacti
 import Home from './pages/Home'
 import HowitWorks from './pages/HowitWorks'
 import AboutUs from './pages/AboutUs'
+import Checkout from './pages/Checkout';
 
 import AllCategories from './pages/Categories/AllCategories';
 import Digging from './pages/Categories/Digging';
@@ -34,11 +35,12 @@ function App() {
           <Route path='/Categories/SeeAllDigging' exact element={<SeeAllDigging/>}/>
 
 
-
+          <Route path='/Checkout' exact element={<Checkout/>}/>
           <Route path='/OurPartners' exact element={<OurPartners/>}/>
           <Route path='/News' exact element={<News/>}/>
           <Route path='/Blogs' exact element={<Blogs/>}/>
           <Route path='/SignUp' exact element={<SignUp/>}/>
+
 
 
 

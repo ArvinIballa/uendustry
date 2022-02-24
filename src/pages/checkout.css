@@ -1,0 +1,58 @@
+.delete{
+    float: right;
+    margin-top: 7px;
+    font-size: 16px;
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+.cardDiv{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.checkoutHeader{
+    color: gray;
+}
+.checkoutButton{
+    margin-top: 25px;
+    background-color: transparent;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    cursor: default;
+}
+.checkoutBtnLabel{
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+}
+.checkoutBtnSubLabel{
+    float: left;
+    margin-left: 20px;
+    color: gray;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.checkoutSubHeader{
+    font-size: 10px;
+    color: gray;
+    margin-top: 10px;
+}
+.checkoutSubHeaderRight{
+    font-size: 10px;
+    color: black;
+    float: right;
+    margin-right: 10px;
+}
+.checkoutBtn{
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 7px;
+    padding: 5px;
+}
+.checkoutImg{
+    width: 5%;
+    margin-right: 40px;
+}

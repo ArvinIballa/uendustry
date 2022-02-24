@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+import * as RiIcons from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
@@ -41,6 +42,7 @@ function Navbar() {
           </div>
 
           <div className='navbarMenu2' >
+            <Link to='/Checkout' className='navbarCart'><RiIcons.RiShoppingCartLine style={{color:'black'}}/></Link>
             <Link to='/AboutUs'  className='navbarMenuText1'>About us</Link>
             <Link to='/OurPartners' className='navbarMenuText1'>Our Partners</Link>
             <Link to='/News' className='navbarMenuText1'>News</Link>
