@@ -10,12 +10,15 @@ import SupplierTransaction from './components/SupplierPage/Transaction/Transacti
 import Home from './pages/Home'
 import HowitWorks from './pages/HowitWorks'
 import AboutUs from './pages/AboutUs'
-import ProductPage from './pages/ProductPage'
+
+import AllCategories from './pages/Categories/AllCategories';
+import Digging from './pages/Categories/Digging';
 
 import OurPartners from './pages/OurPartners'
 import News from './pages/News'
 import Blogs from './pages/Blogs'
 import SignUp from './pages/SignUp'
+import SeeAllDigging from './pages/Categories/SeeAllDigging';
 
 
 function App() {
@@ -25,7 +28,11 @@ function App() {
           <Route path='/' exact element={<Home/>}/>
           <Route path='/HowitWorks' exact element={<HowitWorks/>}/>
           <Route path='/AboutUs' exact element={<AboutUs/>}/>
-          <Route path='/ProductPage' exact element={<ProductPage/>}/>
+
+          <Route path='/Categories/AllCategories' exact element={<AllCategories/>}/>
+          <Route path='/Categories/Digging' exact element={<Digging/>}/>
+          <Route path='/Categories/SeeAllDigging' exact element={<SeeAllDigging/>}/>
+
 
 
           <Route path='/OurPartners' exact element={<OurPartners/>}/>

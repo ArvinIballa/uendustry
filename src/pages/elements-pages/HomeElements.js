@@ -184,14 +184,14 @@ export const IconDiv = styled.div`
 
 // ICON POSITIONS ========================================================================
 export const Icon = styled.img`
-  height: 300px;
-  width: 200px;
+  height: 380px;
+  width: 350px;
   object-fit: contain;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  background-color:#8e8f89;
+  resize: stretch;
   border-radius: 25px;
-  filter: ${({color}) => color ? 'grayscale(100%)': null};
+
 
   :hover {
     transform: scale(1.2);
@@ -203,8 +203,8 @@ export const Prod1Div = styled.div`
   height: 180px;
   width: 175px;
   position: absolute;
-  bottom: 100px;
-  right: 500px;
+  bottom: 130px;
+  right: 600px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -212,8 +212,8 @@ export const Prod2Div = styled.div`
   height: 180px;
   width: 175px;
   position: absolute;
-  bottom: 100px;
-  right: 300px;
+  bottom: 130px;
+  right: 350px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -221,19 +221,19 @@ export const Prod3Div = styled.div`
   height: 180px;
   width: 175px;
   position: absolute;
-  bottom: 100px;
+  bottom: 130px;
   right: 100px;
   transition: all 0.2s ease-in-out;
 `;
 
-export const Prod4Div = styled.div`
-  height: 180px;
-  width: 175px;
-  position: absolute;
-  bottom: 100px;
-  right: -100px;
-  transition: all 0.2s ease-in-out;
-`;
+// export const Prod4Div = styled.div`
+//   height: 180px;
+//   width: 175px;
+//   position: absolute;
+//   bottom: 100px;
+//   right: -100px;
+//   transition: all 0.2s ease-in-out;
+// `;
 
 
 export const Prod5Div = styled.div`
@@ -241,7 +241,7 @@ export const Prod5Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 575px;
+  right: 600px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -252,19 +252,19 @@ export const Prod6Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 375px;
+  right: 350px;
   transition: all 0.2s ease-in-out;
 `;
 
 
-export const Prod7Div = styled.div`
-  height: 180px;
-  width: 175px;
-  position: absolute;
-  bottom: -250px;
-  right: 175px;
-  transition: all 0.2s ease-in-out;
-`;
+// export const Prod7Div = styled.div`
+//   height: 180px;
+//   width: 175px;
+//   position: absolute;
+//   bottom: -250px;
+//   right: 175px;
+//   transition: all 0.2s ease-in-out;
+// `;
 
 
 //OURPARTNER SECTION =============================================================

@@ -65,7 +65,7 @@ export const TitleDiv = styled.div`
   margin-left:40px;
 `;
 export const Title = styled.h1`
-  color: ;
+ 
   font-size: 65px;
   transition: all 0.2s ease-in-out;
   cursor: default;

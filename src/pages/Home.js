@@ -34,11 +34,11 @@ const Home = () => {
 
  //Cards data
  const cardData =[
-    {id: 0, icon: IMAGES.prod1, title: 'Building', path: 'prod1'},
-    {id: 1, icon: IMAGES.prod2, title: 'Houses', path: 'prod2'},
-    {id: 2, icon: IMAGES.prod3, title: 'Pipes', path: 'prod3'},
-    {id: 3, icon: IMAGES.prod4, title: 'Machine', path: 'prod4'},
-    {id: 4, icon: IMAGES.prod5, title: 'Machine', path: 'prod5'},
+    {id: 0, icon: IMAGES.All_Categories, title: 'Building', path: 'All_Categories'},
+    {id: 1, icon: IMAGES.ChemicalsMats_Categories, title: 'Houses', path: 'ChemicalsMats_Categories'},
+    {id: 2, icon: IMAGES.Drills_Categories, title: 'Pipes', path: 'Drills_Categories'},
+    {id: 3, icon: IMAGES.MeasuringMats_Categories, title: 'Machine', path: 'MeasuringMats_Categories'},
+    {id: 4, icon: IMAGES.Spade_Categories, title: 'Machine', path: 'Spade_Categories'},
     {id: 5, icon: IMAGES.prod6, title: 'Machine', path: 'prod6'},
     {id: 6, icon: IMAGES.prod7, title: 'Machine', path: 'prod7'},
     {id: 7, icon: IMAGES.prod8, title: 'Machine', path: 'prod8'},
@@ -82,7 +82,7 @@ const Home = () => {
       <IconDiv>
               <Prod1Div >
                 
-                <Icon src={cardData[0].icon} />
+                <Icon src={cardData[3].icon} />
               </Prod1Div>
       </IconDiv>
 
@@ -103,37 +103,39 @@ const Home = () => {
              
       </IconDiv>
 
-      <IconDiv>
+      {/* <IconDiv>
             <Prod4Div>
                 <Icon src={cardData[3].icon} />
 
             </Prod4Div>
              
-      </IconDiv>
+      </IconDiv> */}
 
       <IconDiv>
+         <Link to='/Categories/Digging'>
             <Prod5Div>
                 <Icon src={cardData[4].icon} />
 
             </Prod5Div>
-             
+         </Link>
       </IconDiv>
 
       <IconDiv>
+            <Link to='/Categories/AllCategories'>
             <Prod6Div>
-                <Icon src={cardData[5].icon} />
+                <Icon src={cardData[0].icon} />
 
             </Prod6Div>
-             
+             </Link>
       </IconDiv>
 
-      <IconDiv>
+      {/* <IconDiv>
             <Prod7Div>
                 <Icon src={cardData[6].icon} />
 
             </Prod7Div>
              
-      </IconDiv>
+      </IconDiv> */}
 
 
      

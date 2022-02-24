@@ -18,6 +18,21 @@ import prod8 from './images/prod8.png'
 import hammer from './images/hammer.jpg'
 import toxic from './images/toxic.jpg'
 import toxic2 from './images/toxic2.jpg'
+import All_Categories from './images/All_Categories.png'
+import ChemicalsMats_Categories from './images/ChemicalsMats_Categories.png'
+import Drills_Categories from './images/Drills_Categories.png'
+import MeasuringMats_Categories from './images/MeasuringMats_Categories.png'
+import Spade_Categories from './images/Spade_Categories.png'
+
+import Ace_EdgingShovel from './images/Ace_EdgingShovel.png'
+import Edging_Shovel from './images/Edging_Shovel.png'
+import Flat_Shovel from './images/Flat_Shovel.png'
+import Lorem_EdgingShovel from './images/Lorem_EdgingShovel.png'
+import Lorem_TrenchShovel from './images/Lorem_TrenchShovel.png'
+import Power_Shovel from './images/Power_Shovel.png'
+import TreePlanting_Shovel from './images/TreePlanting_Shovel.png'
+import Trench_Shovel from './images/Trench_Shovel.png'
+
 export const IMAGES ={
 bg_homepage,
 bg_2,
@@ -37,4 +52,20 @@ prod8,
 hammer,
 toxic,
 toxic2,
+
+All_Categories,
+ChemicalsMats_Categories,
+Drills_Categories,
+MeasuringMats_Categories,
+Spade_Categories,
+
+Ace_EdgingShovel,
+Edging_Shovel,
+Flat_Shovel,
+Lorem_EdgingShovel,
+Lorem_TrenchShovel,
+Power_Shovel,
+TreePlanting_Shovel,
+Trench_Shovel,
+
 }
