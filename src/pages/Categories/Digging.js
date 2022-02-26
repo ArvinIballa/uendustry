@@ -1,16 +1,32 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from '../../navs/Headers/Navbar'
 import Footer from '../../navs/Footers/Footers'
 import * as BiIcons from 'react-icons/bi';
-
+import * as IoIcons from 'react-icons/io'
+import * as AiIcons from 'react-icons/ai'
 import { IMAGES } from '../../navs/assets';
+import successImg from '../../../src/images/success.png'
 
 import Carousel from 'react-grid-carousel'
 import { Container,LeftSection,NavDiv,NavTitle,NavTitle2,ProductDiv,ProductTitleDiv,ProductTitle,ProductListDiv,ButtonList1,RightSection,
   DiggingDiv,DiggingTitle,CarouselDiv,SecondBannerDiv,Title2Div,Title2, SeeAllDiv, SeeAll, HeaderDiv, PictureDiv, PictureBannerDiv, PictureDesc, PicturePriceDesc} from './elements-categories/DiggingElements'
 
+  import {Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
+import './Digging.css'
 const Digging = () => {
+
+  const [orderModal, setOrderModal] = useState(false)
+  const [addToCardModal, setAddToCartModal] = useState(false)
+
+  const showModal = () => {
+    setOrderModal(!orderModal)
+  }
+
+  const isAddToCart = () => {
+    setAddToCartModal(!addToCardModal)
+    setOrderModal(false)
+  }
 
    //Cards data
  const cardData =[
@@ -26,6 +42,82 @@ const Digging = () => {
 
   return (
     <>
+    {/** MODAL Add To Cart */}
+
+      <Modal backdrop='static' centered isOpen={addToCardModal} size='lg'>
+        <div class="modal-header">
+          <div class="modal-title">
+          <h4><AiIcons.AiOutlineCheckCircle style={{color:'#71d0f0'}}/> <label style={{color:'#71d0f0'}}>Added to Cart Successfully</label></h4>
+          </div>
+        <IoIcons.IoIosCloseCircleOutline className='buttonExit' onClick={isAddToCart}/>
+      </div>
+        <ModalBody>
+          <div className='imgWrapper'>
+           <img className='successImg' src={successImg}></img>
+          </div>
+         
+        </ModalBody>
+      </Modal>
+  
+    {/** MODAL END Add To Cart */}
+    {/** MODAL   */}
+
+      <Modal centered backdrop='static' size='xl' isOpen={orderModal}>
+      <div class="modal-header">
+        <h4 class="modal-title">Edging Shovel</h4>
+        <IoIcons.IoIosCloseCircleOutline className='buttonExit' onClick={showModal}/>
+      </div>
+        <ModalBody>
+          <Row>
+            <Col md={6}>
+              <img className='modalImg' src={IMAGES.Ace_EdgingShovel}></img>
+            </Col>
+            <Col md={6}>
+              <div className='headerDiv'>
+                <h1 className='headerDivText'>ACE HARDWARE</h1>
+                <h1 className='headerDivText'>LOREM SHOVEL (75cm)</h1>
+                <br/>
+              </div>
+              <div className='bodyDiv'>
+                  <Row>
+                    <Col>
+                      <label className='headerDivText'>Brand: </label>&nbsp;<label>Ace Hardware</label>
+                    </Col>
+                    <Col>
+                      <label className='headerDivText'>Sold: </label>&nbsp;<label>567 products</label>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <Row>
+                    <Col>
+                      <label className='headerDivText'>Price: </label>&nbsp;<label>₱600.00</label>
+                    </Col>
+                    <Col>
+                      <label className='headerDivText'>Ratings: </label>&nbsp;<label><AiIcons.AiFillStar style={{color:'#71d0f0'}}/><AiIcons.AiFillStar style={{color:'#71d0f0'}}/><AiIcons.AiFillStar style={{color:'#71d0f0'}}/><AiIcons.AiOutlineStar style={{color:'gray'}}/><AiIcons.AiOutlineStar style={{color:'gray'}}/></label>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <Row>
+                    <Col>
+                    <label className='headerDivText'>Quantity: </label>&nbsp;&nbsp;<input defaultValue={1} min={1} className='quantity' type='number'></input>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <Row>
+                    <Col>
+                      <button className='Add-to-Cart' onClick={isAddToCart}>Add to Cart</button>
+                      <Link to='/Checkout'><button className='Checkout'>Checkout</button></Link>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <br/>
+              </div>
+            </Col>
+          </Row>
+        </ModalBody>
+      </Modal>
+
+    {/** END  MODAL   */}
     <Navbar/>
       <Container>
         <LeftSection>
@@ -157,7 +249,7 @@ const Digging = () => {
         </HeaderDiv>
 
         <PictureBannerDiv>
-            <PictureDiv>
+            <PictureDiv style={{cursor:'pointer'}} onClick={showModal}>
             <img width="80%" src={cardData[3].icon} />
             <PictureDesc>Lorem Shovel (75cm)</PictureDesc>
             <PicturePriceDesc>PHP 600.00</PicturePriceDesc>

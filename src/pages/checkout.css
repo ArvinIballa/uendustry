@@ -51,6 +51,7 @@
     border: 2px solid red;
     border-radius: 7px;
     padding: 5px;
+    width: 100%;
 }
 .checkoutImg{
     width: 5%;

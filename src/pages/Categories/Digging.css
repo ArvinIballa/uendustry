@@ -1,0 +1,59 @@
+.buttonExit{
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.modal-title{
+    font-weight: bold;
+}
+.modalImg{
+    padding: 50px;
+    width: 100%;
+}
+.headerDiv{
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+}
+.headerDivText{
+    font-weight: bold;
+}
+.quantity{
+    width: 10%;
+    border: 1px solid red;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.quantity:focus{
+    outline: none;
+    border-color: red;
+}
+
+.Add-to-Cart{
+    padding: 10px;
+    background-color: #71d0f0;
+    border: 2px solid #71d0f0;
+    border-radius: 7px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.Checkout{
+    padding: 10px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 7px;
+    margin-right: 10px;
+    color: white;
+}
+.imgWrapper{
+    display: flex;
+    justify-content: center;
+}
+.successImg{
+    width: 65%;
+    align-items: center;
+}
+
+

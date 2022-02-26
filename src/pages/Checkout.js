@@ -5,6 +5,7 @@ import Navbar from '../navs/Headers/Navbar';
 import './checkout.css'
 import Footer from '../navs/Footers/Footers'
 import image from '../navs/assets/images/Edging_Shovel.png'
+import {Link } from 'react-router-dom'
 
 const Checkout = () => {
 
@@ -12,7 +13,7 @@ const Checkout = () => {
   return (
     <>
         <Navbar/>
-        <Container>
+        <Container className='containerCheckout'>
            <Row>
                <Col md={8}>
                     <Card className='cardDiv'>
@@ -70,9 +71,9 @@ const Checkout = () => {
                </Col>
               
                <Col>
-                <Card className='cardDiv'>
+                <Card  className='cardDiv'>
                     <label className='checkoutHeader'>Select Payment Method</label>
-                    <Card className='checkoutButton'>
+                    <Card  style={ selectedMOP == 'CreditDebit' ? {border: '2px solid lightblue'} : {border: '2px solid gray'}} className='checkoutButton'>
                         <Row>
                             <Col>
                             <label className='checkoutBtnLabel'>***********88123</label>
@@ -94,7 +95,7 @@ const Checkout = () => {
                         </Row>
                        
                     </Card>
-                    <Card className='checkoutButton'>
+                    <Card style={ selectedMOP == 'COD' ? {border: '2px solid lightblue'} : {border: '2px solid gray'}} className='checkoutButton'>
                         <Row>
                             <Col>
                             <label className='checkoutBtnLabel'>Cash on Delivery</label>
@@ -121,7 +122,7 @@ const Checkout = () => {
                     <br/>
                     <label className='checkoutSubHeader' style={{color:'black'}}>Total<label className='checkoutSubHeaderRight'>PHP 650.00</label></label>
                     <br/>
-                    <button className='checkoutBtn'>Proceed to Checkout</button>
+                    <Link  to='/Placeorder'><button className='checkoutBtn'>Proceed to Checkout</button></Link>
                 </Card>
                </Col>
                

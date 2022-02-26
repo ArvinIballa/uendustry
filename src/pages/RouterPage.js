@@ -10,6 +10,7 @@ import News from './News';
 import Blogs from './Blogs';
 import SignUp from './SignUp';
 import Checkout from './Checkout';
+import Placeorder from './Placeorder';
 
 export default function RouterPage() {
   return (
@@ -21,6 +22,8 @@ export default function RouterPage() {
                 <Route path='/AboutUs' exact element={<AboutUs/>}/>
                 <Route path='/ProductPage' exact element={<ProductPage/>}/>
 
+
+                <Route path='/Placeorder' exact element={<Placeorder/>}/>
                 <Route path='/Checkout' exact element={<Checkout/>}/>
                 <Route path='/OurPartners' exact element={<OurPartners/>}/>
                 <Route path='/News' exact element={<News/>}/>
