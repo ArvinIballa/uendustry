@@ -7,12 +7,14 @@ import * as IoIcons from 'react-icons/io'
 import * as AiIcons from 'react-icons/ai'
 import { IMAGES } from '../../navs/assets';
 import successImg from '../../../src/images/success.png'
+import SignUp from '../../pages/SignUp';
+
 
 import Carousel from 'react-grid-carousel'
 import { Container,LeftSection,NavDiv,NavTitle,NavTitle2,ProductDiv,ProductTitleDiv,ProductTitle,ProductListDiv,ButtonList1,RightSection,
   DiggingDiv,DiggingTitle,CarouselDiv,SecondBannerDiv,Title2Div,Title2, SeeAllDiv, SeeAll, HeaderDiv, PictureDiv, PictureBannerDiv, PictureDesc, PicturePriceDesc} from './elements-categories/DiggingElements'
 
-  import {Modal, ModalHeader, ModalBody, ModalFooter, Row, Col} from 'reactstrap'
+  import {Modal, ModalHeader, ModalBody, ModalFooter, Row, Col, Input, Button} from 'reactstrap'
 import './Digging.css'
 const Digging = () => {
 
@@ -28,6 +30,27 @@ const Digging = () => {
     setOrderModal(false)
   }
 
+
+  const [orderModalNotLogin,setOrderModalNotLogin] = useState(false)
+  const [addToCardModalNotLogin, setAddToCartModalNotLogin] = useState(false)
+
+  const showModal2 = () => {
+    setOrderModalNotLogin(!orderModalNotLogin)
+  }
+
+  const isAddToCartNotLogin = () => {
+    setAddToCartModalNotLogin(!addToCardModalNotLogin)
+    setOrderModalNotLogin(false)
+  }
+  
+     // open how to SignUp modal
+     const [showHowToSignUpModal, setShowHowToSignUpModal] = useState(false);
+     const openHowToSignUpModal = () =>{
+       setShowHowToSignUpModal(true)
+       setAddToCartModalNotLogin(false)
+      }
+     const closeHowToSignUpModal = () => {setShowHowToSignUpModal(false)}
+
    //Cards data
  const cardData =[
   {id: 0, icon: IMAGES.Ace_EdgingShovel, title: 'Building', path: 'Ace_EdgingShovel'},
@@ -42,6 +65,7 @@ const Digging = () => {
 
   return (
     <>
+      <SignUp showHowToSignUpModal={showHowToSignUpModal} closeHowToSignUpModal={closeHowToSignUpModal}/>
     {/** MODAL Add To Cart */}
 
       <Modal backdrop='static' centered isOpen={addToCardModal} size='lg'>
@@ -54,6 +78,43 @@ const Digging = () => {
         <ModalBody>
           <div className='imgWrapper'>
            <img className='successImg' src={successImg}></img>
+          </div>
+         
+        </ModalBody>
+      </Modal>
+  
+    {/** MODAL END Add To Cart */}
+
+     {/** MODAL Add To Cart NOT Login*/}
+
+     <Modal backdrop='static' centered isOpen={addToCardModalNotLogin} size='lg'>
+        <div class="modal-header">
+          <div class="modal-title">
+          <h4> <label >Log In</label></h4>
+          </div>
+        <IoIcons.IoIosCloseCircleOutline className='buttonExit' onClick={isAddToCartNotLogin}/>
+      </div>
+        <ModalBody>
+          
+          <div class="InputDiv">
+          <Input placeholder='Phone number/ Username/ Email'></Input>
+          </div>
+          <div class="InputDiv">
+          <Input placeholder='Password'></Input>
+          </div>
+          <div >
+            <label class='ButtonLogin'><Link to='/Supplier/Profile' style={{textDecoration:'none', color:'white'}}>Login</Link></label>
+          </div>
+
+          <div style={{justifyContent:'space-between', display:'flex', marginTop:6}}>
+            <label class='labelBottom'>Forgot Password</label>
+            <label class='labelBottom'>Log In with Phone Number</label>
+          </div>
+
+          <div style={{justifyContent:'center', display:'flex'}}>
+              
+              <labe class='labelOr'>New to B2B? <a onClick={openHowToSignUpModal} style={{cursor:'pointer', color:'red'}}>Sign Up</a></labe>
+         
           </div>
          
         </ModalBody>
@@ -116,8 +177,66 @@ const Digging = () => {
           </Row>
         </ModalBody>
       </Modal>
-
     {/** END  MODAL   */}
+    {/* //=======================MODAL ADD TO CART NOT LOGIN ============= */}
+
+    <Modal centered backdrop='static' size='xl' isOpen={orderModalNotLogin}>
+      <div class="modal-header">
+        <h4 class="modal-title">Edging Shovel</h4>
+        <IoIcons.IoIosCloseCircleOutline className='buttonExit' onClick={showModal2}/>
+      </div>
+        <ModalBody>
+          <Row>
+            <Col md={6}>
+              <img className='modalImg' src={IMAGES.Ace_EdgingShovel}></img>
+            </Col>
+            <Col md={6}>
+              <div className='headerDiv'>
+                <h1 className='headerDivText'>ACE HARDWARE</h1>
+                <h1 className='headerDivText'>LOREM SHOVEL (75cm)</h1>
+                <br/>
+              </div>
+              <div className='bodyDiv'>
+                  <Row>
+                    <Col>
+                      <label className='headerDivText'>Brand: </label>&nbsp;<label>Ace Hardware</label>
+                    </Col>
+                    <Col>
+                      <label className='headerDivText'>Sold: </label>&nbsp;<label>567 products</label>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <Row>
+                    <Col>
+                      <label className='headerDivText'>Price: </label>&nbsp;<label>₱600.00</label>
+                    </Col>
+                    <Col>
+                      <label className='headerDivText'>Ratings: </label>&nbsp;<label><AiIcons.AiFillStar style={{color:'#71d0f0'}}/><AiIcons.AiFillStar style={{color:'#71d0f0'}}/><AiIcons.AiFillStar style={{color:'#71d0f0'}}/><AiIcons.AiOutlineStar style={{color:'gray'}}/><AiIcons.AiOutlineStar style={{color:'gray'}}/></label>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <Row>
+                    <Col>
+                    <label className='headerDivText'>Quantity: </label>&nbsp;&nbsp;<input defaultValue={1} min={1} className='quantity' type='number'></input>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <Row>
+                    <Col>
+                      <button className='Add-to-Cart' onClick={isAddToCartNotLogin}>Add to Cart</button>
+                     <button className='Checkout' onClick={isAddToCartNotLogin}>Checkout</button>
+                    </Col>
+                  </Row>
+                  <br/>
+                  <br/>
+              </div>
+            </Col>
+          </Row>
+        </ModalBody>
+      </Modal>
+  {/* //END MODAL ADD TO CART NOT LOGIN*/}
+
+
     <Navbar/>
       <Container>
         <LeftSection>
@@ -254,7 +373,7 @@ const Digging = () => {
             <PictureDesc>Lorem Shovel (75cm)</PictureDesc>
             <PicturePriceDesc>PHP 600.00</PicturePriceDesc>
             </PictureDiv>
-            <PictureDiv>
+            <PictureDiv  style={{cursor:'pointer'}} onClick={showModal2}>
             <img width="80%" src={cardData[3].icon} />
             <PictureDesc>Lorem Shovel (75cm)</PictureDesc>
             <PicturePriceDesc>PHP 600.00</PicturePriceDesc>

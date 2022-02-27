@@ -1,59 +1,90 @@
-.buttonExit{
-    color: red;
-    font-size: 2rem;
-    cursor: pointer;
+.buttonExit {
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
 }
-.modal-title{
-    font-weight: bold;
+.modal-title {
+  font-weight: bold;
 }
-.modalImg{
-    padding: 50px;
-    width: 100%;
+.modalImg {
+  padding: 50px;
+  width: 100%;
 }
-.headerDiv{
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
+.headerDiv {
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
 }
-.headerDivText{
-    font-weight: bold;
+.headerDivText {
+  font-weight: bold;
 }
-.quantity{
-    width: 10%;
-    border: 1px solid red;
-    border-radius: 7px;
-    text-align: center;
-}
-
-.quantity:focus{
-    outline: none;
-    border-color: red;
+.quantity {
+  width: 10%;
+  border: 1px solid red;
+  border-radius: 7px;
+  text-align: center;
 }
 
-.Add-to-Cart{
-    padding: 10px;
-    background-color: #71d0f0;
-    border: 2px solid #71d0f0;
-    border-radius: 7px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    color: white;
+.quantity:focus {
+  outline: none;
+  border-color: red;
 }
 
-.Checkout{
-    padding: 10px;
-    background-color: red;
-    border: 2px solid red;
-    border-radius: 7px;
-    margin-right: 10px;
-    color: white;
-}
-.imgWrapper{
-    display: flex;
-    justify-content: center;
-}
-.successImg{
-    width: 65%;
-    align-items: center;
+.Add-to-Cart {
+  padding: 10px;
+  background-color: #71d0f0;
+  border: 2px solid #71d0f0;
+  border-radius: 7px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: white;
 }
 
+.Checkout {
+  padding: 10px;
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 7px;
+  margin-right: 10px;
+  color: white;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+}
+.successImg {
+  width: 65%;
+  align-items: center;
+}
 
+.InputDiv {
+  margin-bottom: 20px;
+}
+
+.ButtonLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+  padding: 5px 0;
+
+  color: #fff;
+  font-weight: bold;
+  background-color: red;
+  border: 2px solid lightgray;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.labelBottom {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.labelOr {
+  color: gray;
+  font-size: 15px;
+}

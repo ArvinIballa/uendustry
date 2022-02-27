@@ -79,7 +79,7 @@ import Footers from '../navs/Footers/Footers';
               </ModalCategoryDiv>
 
               <ModalButtonDiv>
-               <Link to='/' style={{textDecoration:'none'}}> <ModalButton >Sign Up</ModalButton></Link>
+               <Link to='/Customer/Profile' style={{textDecoration:'none'}}> <ModalButton >Sign Up</ModalButton></Link>
               </ModalButtonDiv>
             </ModalBottom>
 

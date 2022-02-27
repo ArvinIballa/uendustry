@@ -21,6 +21,8 @@ import News from './pages/News'
 import Blogs from './pages/Blogs'
 import SignUp from './pages/SignUp'
 import SeeAllDigging from './pages/Categories/SeeAllDigging';
+import ProfileCustomer from './components/SupplierPage/CustomerPage/ProfileCustomer/ProfileCustomer';
+import OrderCustomer from './components/SupplierPage/CustomerPage/OrdersCustomer/OrderCustomer';
 
 
 function App() {
@@ -42,14 +44,16 @@ function App() {
           <Route path='/Blogs' exact element={<Blogs/>}/>
           <Route path='/SignUp' exact element={<SignUp/>}/>
 
-
-
-
           <Route path="/Supplier/Profile" element={<SupplierProfile/>} exact />
           <Route path="/Supplier/Inventory" element={<SupplierInventory/>} exact />
           <Route path="/Supplier/Services" element={<SupplierServices/>} exact />
           <Route path="/Supplier/Deliveries" element={<SupplierDeliveries/>} exact />
           <Route path="/Supplier/Transactions" element={<SupplierTransaction/>} exact />
+
+          <Route path="/Customer/Profile" element={<ProfileCustomer/>} exact />
+          <Route path="/Customer/Orders" element={<OrderCustomer/>} exact />
+
+
       </Routes>
     </Router>
     
