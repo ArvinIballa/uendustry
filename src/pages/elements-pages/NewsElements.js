@@ -27,13 +27,13 @@ export const NewsTitleDiv = styled.div`
 `;
 
 export const NewsTitle = styled.h1`
- 
+  font-family: 'Roboto', sans-serif;
  font-size:35px;
  margin-bottom:10px;
  
 `;
 
-export const NewsContainerLeft = styled.h1`
+export const NewsContainerLeft = styled.div`
 
  height: 750px;
  width: 600px;
@@ -56,6 +56,7 @@ export const ImageLeft = styled.img`
 export const ImageLeftDesc = styled.h2`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
  padding-bottom:30px;
  border-bottom: 2px solid gray;
 `;
@@ -76,9 +77,10 @@ export const Image2Left = styled.img`
   object-fit: contain;
 `;
 
-export const Image2LeftDesc = styled.div`
+export const Image2LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
 `;
 
 export const Image3LeftDiv = styled.div`
@@ -96,9 +98,10 @@ export const Image3Left = styled.img`
   object-fit: contain;
 `;
 
-export const Image3LeftDesc = styled.div`
+export const Image3LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
 `;
 
 export const Image4LeftDiv = styled.div`
@@ -116,9 +119,11 @@ export const Image4Left = styled.img`
   object-fit: contain;
 `;
 
-export const Image4LeftDesc = styled.div`
+export const Image4LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
+ 
 `;
 //CONTAINER RIGHT====================================================
 
@@ -138,7 +143,7 @@ export const TitleRightDiv = styled.div`
 
 export const TitleRight = styled.p`
   font-size:30px;
-  font-weight:bold;
+  font-family: 'Roboto', sans-serif;
   
   cursor: default;
 
@@ -154,7 +159,7 @@ export const AuthorRightDiv = styled.div`
 
 export const AuthorRight = styled.p`
   font-size:10px;
-  font-weight:bold;
+  font-family: 'Roboto', sans-serif;
   
   cursor: default;
 
@@ -205,7 +210,7 @@ export const DescRightDiv = styled.div`
 
 export const DescRight = styled.p`
   font-size:20px;
- 
+  font-family: 'Roboto', sans-serif;
   text-align:left;
   cursor: default;
 

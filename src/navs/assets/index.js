@@ -33,7 +33,15 @@ import Power_Shovel from './images/Power_Shovel.png'
 import TreePlanting_Shovel from './images/TreePlanting_Shovel.png'
 import Trench_Shovel from './images/Trench_Shovel.png'
 
+import about_us_bg from './images/about_us_bg.jpg'
+import categories_bg from './images/categories_bg.jpg'
+import our_partners_bg from './images/our_partners_bg.jpg'
+
 export const IMAGES ={
+
+about_us_bg,
+categories_bg,
+our_partners_bg,
 bg_homepage,
 bg_2,
 bg_1,

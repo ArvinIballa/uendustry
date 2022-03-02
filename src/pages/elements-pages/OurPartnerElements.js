@@ -8,7 +8,7 @@ import { Link as LinkR } from 'react-router-dom';
 export const ContainerBG = styled.div`
   height: 100%;
   width: 100%;
-  background: url(${IMAGES.bg_1}) no-repeat center center;
+  background: url(${IMAGES.our_partners_bg}) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -35,7 +35,8 @@ export const OurPartnerTitleDIV = styled.div`
 `;
 export const OurPartnerTitle = styled.h1`
  font-size: 75px;
- color:#1c53ba;
+ color:#1c53ba; 
+ font-family: 'Work Sans', sans-serif;
  
 
 
@@ -69,7 +70,8 @@ export const Title = styled.h1`
   font-size: 65px;
   transition: all 0.2s ease-in-out;
   cursor: default;
-  font-weight:bold;
+ 
+  font-family: 'Work Sans', sans-serif;
 
   @media screen and (max-width: 560px) {
     font-size: 45px;
@@ -82,8 +84,8 @@ export const ImageLeft = styled.img`
 `;
 export const ImageLeftDesc = styled.h2`
  text-align:left;
- font-size:50px;
- 
+ font-size:45px;
+ font-family: 'Roboto', sans-serif;
 `;
 
 // SECOND PARTNER

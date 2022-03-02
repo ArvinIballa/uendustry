@@ -53,7 +53,7 @@ const Home = () => {
     
         <ContainerLeft>
         <TitleDiv>
-            <Title><span style={{color:'red'}}>UE</span>ndustry</Title>
+            <Title><span style={{color:'red', fontFamily: 'Work Sans'}}>UE</span>ndustry</Title>
          </TitleDiv>
          <DescriptionDiv>
             <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ipsum elit,molestie et lorem eu, vehicula.</Description>

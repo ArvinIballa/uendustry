@@ -30,6 +30,7 @@ export const NewsTitle = styled.h1`
  
  font-size:35px;
  margin-bottom:10px;
+ font-family: 'Roboto', sans-serif;
  
 `;
 
@@ -58,6 +59,7 @@ export const ImageLeftDesc = styled.h2`
  font-size:20px;
  padding-bottom:30px;
  border-bottom: 2px solid gray;
+ font-family: 'Roboto', sans-serif;
 `;
 
 
@@ -76,9 +78,10 @@ export const Image2Left = styled.img`
   object-fit: contain;
 `;
 
-export const Image2LeftDesc = styled.div`
+export const Image2LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
 `;
 
 export const Image3LeftDiv = styled.div`
@@ -96,9 +99,10 @@ export const Image3Left = styled.img`
   object-fit: contain;
 `;
 
-export const Image3LeftDesc = styled.div`
+export const Image3LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
 `;
 
 export const Image4LeftDiv = styled.div`
@@ -116,9 +120,10 @@ export const Image4Left = styled.img`
   object-fit: contain;
 `;
 
-export const Image4LeftDesc = styled.div`
+export const Image4LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
+ font-family: 'Roboto', sans-serif;
 `;
 //CONTAINER RIGHT====================================================
 
@@ -138,8 +143,8 @@ export const TitleRightDiv = styled.div`
 
 export const TitleRight = styled.p`
   font-size:30px;
-  font-weight:bold;
-  
+
+  font-family: 'Roboto', sans-serif;
   cursor: default;
 
   @media screen and (max-width: 560px) {
@@ -155,7 +160,7 @@ export const AuthorRightDiv = styled.div`
 export const AuthorRight = styled.p`
   font-size:10px;
   font-weight:bold;
-  
+  font-family: 'Roboto', sans-serif;
   cursor: default;
 
   @media screen and (max-width: 560px) {
@@ -172,7 +177,7 @@ export const DateRightDiv = styled.div`
 
 export const DateRight = styled.p`
   font-size:10px;
-  
+  font-family: 'Roboto', sans-serif;
   cursor: default;
   @media screen and (max-width: 560px) {
     font-size: 16px;
@@ -206,7 +211,7 @@ export const DescRightDiv = styled.div`
 export const DescRight = styled.p`
   font-size:20px;
   text-align:left;
-  
+  font-family: 'Roboto', sans-serif;
   cursor: default;
 
   @media screen and (max-width: 560px) {

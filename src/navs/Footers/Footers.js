@@ -30,8 +30,8 @@ const Footer = () => {
    </div>
    <div className='footer-div'>
          <img src={UEndustryLogo} className='footerLogo'></img>
-         <p className='iconText'>UE</p>
-         <p className='iconText2'>ndustry</p>
+         <p className='iconText ' style={{fontFamily: 'Work Sans'}}>UE</p>
+         <p className='iconText2' style={{fontFamily: 'Work Sans'}}>ndustry</p>
 
    <div className='rightsDiv'>         
    <p className='rights'>All Rights Reserved. Company Name © 2022.</p>

@@ -80,7 +80,7 @@ import Navbar from '../navs/Headers/Navbar';
             
             <ImageLeft src={cardData[1].icon}></ImageLeft>
             <TitleDiv> 
-            <Title>  DUMMY ACCOUNT </Title> 
+            <Title>  Dummy Company </Title> 
             <ImageLeftDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ipsum elit,molestie et lorem eu, vehicula mollis risus.</ImageLeftDesc>
             </TitleDiv>
      
@@ -91,7 +91,7 @@ import Navbar from '../navs/Headers/Navbar';
                             
            
                 <TitleDiv> 
-                <Title>  DUMMY ACCOUNT </Title> 
+                <Title>  Dummy Company </Title> 
                 <ImageLeftDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ipsum elit,molestie et lorem eu, vehicula mollis risus.</ImageLeftDesc>
                 </TitleDiv>
                 <ImageLeft src={cardData[1].icon}></ImageLeft>
@@ -100,7 +100,7 @@ import Navbar from '../navs/Headers/Navbar';
         <ContainerLeft>     
             <ImageLeft src={cardData[1].icon}></ImageLeft>
             <TitleDiv> 
-            <Title>  DUMMY ACCOUNT </Title> 
+            <Title>  Dummy Company </Title> 
             <ImageLeftDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ipsum elit,molestie et lorem eu, vehicula mollis risus.</ImageLeftDesc>
             </TitleDiv>
 

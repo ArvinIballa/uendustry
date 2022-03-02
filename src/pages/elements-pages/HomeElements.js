@@ -8,8 +8,11 @@ export const ContainerAll = styled.div`
  
   flex:1;
  
-  max-width: 100%;
+  display:flex;
+  flex-direction:column;
     overflow-x: hidden;
+    align-items: center;
+  justify-content: center;
 `;
 
 export const Container = styled.div`
@@ -27,14 +30,14 @@ export const Container = styled.div`
 `;
 // LEFT SECTION =================================================================
 export const ContainerLeft = styled.div`
- flex: 0.3;
+  flex: 0.3;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  margin-right: 20%;
-  margin-left: 5%;
-  margin-bottom: 15%;
+  padding:175px;
+  margin-bottom: 100px;
+  
 `
 export const TitleDiv = styled.div`
   display: flex;
@@ -42,6 +45,8 @@ export const TitleDiv = styled.div`
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 20px;
+  margin-left:-20px;
+
 `;
 
 export const Title = styled.h1`
@@ -49,6 +54,7 @@ export const Title = styled.h1`
   font-size: 110px;
   transition: all 0.2s ease-in-out;
   cursor: default;
+  font-family: 'Work Sans', sans-serif;
   color:#8e8f89;
   @media screen and (max-width: 560px) {
     font-size: 85px;
@@ -70,7 +76,7 @@ export const Description = styled.p`
  text-align:left;
   color:#030303;
   cursor: default;
-
+  font-family: 'Roboto', sans-serif;
   @media screen and (max-width: 560px) {
     font-size: 16px;
   }
@@ -122,8 +128,7 @@ export const ContainerRight = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
-  min-width: 480px;
-  min-height: 909px;
+
  
  
 `;
@@ -143,7 +148,7 @@ export const GameImage = styled.img`
 export const CategoriesBG = styled.div`
   height: 100%;
   width: 100%;
-  background: url(${IMAGES.bg_cat}) no-repeat center center;
+  background: url(${IMAGES.categories_bg}) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -156,15 +161,16 @@ export const CategoriesBG = styled.div`
 export const CategoriesDiv = styled.div`
   display: flex;
   margin-bottom: 700px;
-  margin-left:450px;
+  margin-left:250px;
+ 
   
     
 `
 
 export const CategoriesTitle = styled.h1`
- font-size: 90px;
+ font-size: 60px;
  color:#ffff;
-
+ font-family: 'Work Sans', sans-serif;
 
  @media screen and (max-width: 560px) {
     font-size: 85px;
@@ -176,7 +182,7 @@ export const IconDiv = styled.div`
   margin-right: 50px;
   z-index: 20;
   position: relative;
-
+  
   @media screen and (max-height: 560px) {
     z-index: 2;
   }
@@ -204,7 +210,7 @@ export const Prod1Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 600px;
+  right: 500px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -213,7 +219,7 @@ export const Prod2Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 350px;
+  right: 250px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -222,7 +228,7 @@ export const Prod3Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 100px;
+  right: 0px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -241,7 +247,7 @@ export const Prod5Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 600px;
+  right: 500px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -252,7 +258,7 @@ export const Prod6Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 350px;
+  right: 250px;
   transition: all 0.2s ease-in-out;
 `;
 
@@ -272,7 +278,7 @@ export const Prod6Div = styled.div`
 export const PartnerBG = styled.div`
   height: 100%;
   width: 100%;
-  background: url(${IMAGES.bg_1}) no-repeat center center;
+  background: url(${IMAGES.our_partners_bg}) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   flex-direction: column;
@@ -289,14 +295,15 @@ export const CarouselDiv = styled.div `
 `
 
 export const OurPartnerTitleDIV = styled.div`
- margin-left:600px;
+ margin-left:670px;
 
 
   
 `;
 export const OurPartnerTitle = styled.h1`
- font-size: 75px;
+ font-size: 55px;
  color:#1c53ba;
+ font-family: 'Work Sans', sans-serif;
  
 
 

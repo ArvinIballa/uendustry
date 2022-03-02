@@ -26,7 +26,7 @@
   justify-content: flex-end;
   padding: 15px;
 }
-.navbarCart { 
+.navbarCart {
   font-size: 25px;
   margin-right: 20px;
   margin-top: -8px;
@@ -71,6 +71,7 @@
 .iconText {
   font-size: 25px;
   font-weight: bold;
+  font-family: "Work Sans", sans-serif;
   color: red;
 }
 
@@ -91,6 +92,7 @@
   font-size: 25px;
   top: 20px;
   font-weight: bold;
+  font-family: "Work Sans", sans-serif;
   color: gray;
 }
 

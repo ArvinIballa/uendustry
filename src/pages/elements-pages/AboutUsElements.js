@@ -8,7 +8,7 @@ import { Link as LinkR } from 'react-router-dom';
 export const ContainerBG = styled.div`
   height: 100%;
   width: 100%;
-  background: url(${IMAGES.bg_cat}) no-repeat center center;
+  background: url(${IMAGES.about_us_bg}) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -43,6 +43,7 @@ export const AboutUsTitle = styled.h1`
  color:#1c53ba;
  font-size:75px;
  margin-bottom:10px;
+ font-family: 'Work Sans', sans-serif;
  
 `;
 
