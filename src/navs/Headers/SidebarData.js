@@ -2,9 +2,15 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
-import * as FcIcons from 'react-icons/fc';
+import * as RiIcons from 'react-icons/ri';
 import * as BiIcons from 'react-icons/bi';
 export const SidebarData = [
+  {
+    title: 'My Cart',
+    path: '/Checkout',
+    icon: <RiIcons.RiShoppingCartLine />,
+    cName: 'nav-text2'
+  },
   {
     title: 'Home',
     path: '/',

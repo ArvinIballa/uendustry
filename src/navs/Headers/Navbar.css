@@ -132,7 +132,7 @@
 .nav-menu2 {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .nav-menu2 {
     background-color: gray;
     width: 100%;
@@ -174,23 +174,33 @@ span {
   margin-left: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .navbarMenu2 {
     display: none;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 1520px) {
+  .navbarMenu2 {
+    margin-left: 650px;
+    margin-top: -55px;
+    transition: 0.2s;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .navbarMenu2 {
     margin-left: 300px;
     margin-top: -50px;
+    transition: 0.2s;
   }
 }
+
 .menu-barss {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .menu-barss {
     display: block;
     margin-left: 2rem;
