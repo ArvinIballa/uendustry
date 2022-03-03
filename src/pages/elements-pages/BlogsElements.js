@@ -9,6 +9,11 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction:row;
+  
+  @media screen and (max-width: 560px) {
+    flex-direction:column;
+  }
   
 `;
 
@@ -19,11 +24,19 @@ export const ContainerLeft = styled.div`
   min-height: 910px;
   padding:40px;
   background-color:#F5F5F5;
+
+
+  @media screen and (max-width: 560px) {
+    min-width:300px;
+    min-height: 910px;
+  }
 `;
 
 
 export const NewsTitleDiv = styled.div`
   display: flex;
+  
+  
 `;
 
 export const NewsTitle = styled.h1`
@@ -31,7 +44,9 @@ export const NewsTitle = styled.h1`
  font-size:35px;
  margin-bottom:10px;
  font-family: 'Roboto', sans-serif;
- 
+ @media screen and (max-width: 560px) {
+  font-size:25px;
+  }
 `;
 
 export const NewsContainerLeft = styled.div`
@@ -47,6 +62,11 @@ export const NewsContainerLeft = styled.div`
  ::-webkit-scrollbar {
     display: none;
 }
+@media screen and (max-width: 560px) {
+  height: 750px;
+ width:425px;
+  }
+
 `;
 
 export const ImageLeft = styled.img`
@@ -60,6 +80,9 @@ export const ImageLeftDesc = styled.h2`
  padding-bottom:30px;
  border-bottom: 2px solid gray;
  font-family: 'Roboto', sans-serif;
+ @media screen and (max-width: 560px) {
+  font-size:15px;
+  }
 `;
 
 
@@ -70,18 +93,27 @@ export const Image2LeftDiv = styled.div`
   position: absolute;
   border-bottom: 2px solid gray;
   display:flex;
+  @media screen and (max-width: 560px) {
+    width: 420px;
+  }
 `;
 
 export const Image2Left = styled.img`
   height: 70%;
   width: 50%;
   object-fit: contain;
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const Image2LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
  font-family: 'Roboto', sans-serif;
+ @media screen and (max-width: 560px) {
+  font-size:15px;
+  }
 `;
 
 export const Image3LeftDiv = styled.div`
@@ -91,18 +123,27 @@ export const Image3LeftDiv = styled.div`
   position: absolute;
   border-bottom: 2px solid gray;
   display:flex;
+  @media screen and (max-width: 560px) {
+    width: 420px;
+  }
 `;
 
 export const Image3Left = styled.img`
   height: 70%;
   width: 50%;
   object-fit: contain;
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const Image3LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
  font-family: 'Roboto', sans-serif;
+ @media screen and (max-width: 560px) {
+  font-size:15px;
+  }
 `;
 
 export const Image4LeftDiv = styled.div`
@@ -112,25 +153,33 @@ export const Image4LeftDiv = styled.div`
   position: absolute;
 
   display:flex;
+  @media screen and (max-width: 560px) {
+    width: 420px;
+  }
 `;
 
 export const Image4Left = styled.img`
   height: 70%;
   width: 50%;
   object-fit: contain;
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const Image4LeftDesc = styled.p`
  text-align:left;
  font-size:20px;
  font-family: 'Roboto', sans-serif;
+ @media screen and (max-width: 560px) {
+  font-size:15px;
+  }
 `;
 //CONTAINER RIGHT====================================================
 
 
 export const ContainerRight = styled.div`
-  min-width: 100%;
-  min-height: 910px;
+ 
   padding:40px;
   
 `;
@@ -195,14 +244,14 @@ export const ImageRight = styled.img`
 
 export const ImageRightPos = styled.div`
   height: 50%;
-  width: 62%;
+  width: 100%;
 
  
 `;
 
 export const DescRightDiv = styled.div`
   display: flex;
-  width: 62%;
+  width: 100%;
   flex-direction:row;
   justify-content:center
  

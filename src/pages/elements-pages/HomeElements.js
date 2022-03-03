@@ -128,6 +128,8 @@ export const ContainerRight = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  min-width: 480px;
+  min-height: 909px;
 
  
  
@@ -159,9 +161,11 @@ export const CategoriesBG = styled.div`
 `;
 
 export const CategoriesDiv = styled.div`
-  display: flex;
+ 
   margin-bottom: 700px;
-  margin-left:250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  
   
     
@@ -173,16 +177,20 @@ export const CategoriesTitle = styled.h1`
  font-family: 'Work Sans', sans-serif;
 
  @media screen and (max-width: 560px) {
-    font-size: 85px;
+    font-size: 45px;
   }
+`
+
+export const DivIcon = styled.div `
+justify-content:'space-between'
 `
 
 export const IconDiv = styled.div`
   border: none;
-  margin-right: 50px;
   z-index: 20;
   position: relative;
-  
+
+
   @media screen and (max-height: 560px) {
     z-index: 2;
   }
@@ -198,9 +206,12 @@ export const Icon = styled.img`
   resize: stretch;
   border-radius: 25px;
 
-
   :hover {
     transform: scale(1.2);
+  }
+  @media screen and (max-width: 560px) {
+  height: 200px;
+  width: 350px;
   }
 `;
 // PRODUCT ------------------------------------------
@@ -210,8 +221,14 @@ export const Prod1Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 500px;
+  right: 450px;
+
   transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 560px) {
+  bottom: 100px;
+  right: 260px;
+  }
+  
 `;
 
 export const Prod2Div = styled.div`
@@ -219,8 +236,13 @@ export const Prod2Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 250px;
+  right: 175px;
+
   transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 560px) {
+    bottom: 100px;
+    right: 110px;
+}
 `;
 
 export const Prod3Div = styled.div`
@@ -228,8 +250,12 @@ export const Prod3Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 0px;
+  right: -100px;
   transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 560px) {
+    bottom: 100px;
+    right: -40px;
+}
 `;
 
 // export const Prod4Div = styled.div`
@@ -247,8 +273,12 @@ export const Prod5Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 500px;
+  right: 325px;
   transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 560px) {
+    bottom: -100px;
+    right: 180px;
+}
 `;
 
 
@@ -258,8 +288,12 @@ export const Prod6Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 250px;
+  right: 50px;
   transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 560px) {
+    bottom: -100px;
+    right: 30px;
+}
 `;
 
 
@@ -284,18 +318,21 @@ export const PartnerBG = styled.div`
   flex-direction: column;
   display:flex;
   align-items: center;
-  padding:60px;
+ 
   min-width: 480px;
   min-height: 900px;
 `;
 
 export const CarouselDiv = styled.div `
- 
+  padding:60px;
   
 `
 
 export const OurPartnerTitleDIV = styled.div`
- margin-left:670px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:25px;
 
 
   
@@ -309,7 +346,7 @@ export const OurPartnerTitle = styled.h1`
 
 
  @media screen and (max-width: 560px) {
-    font-size: 65px;
+    font-size: 40px;
   }
 `
 

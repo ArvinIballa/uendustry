@@ -32,6 +32,7 @@ padding:50px;
 export const CatTitle = styled.h1`
 font-size:50px;
 color:blue;
+font-family: 'Work Sans', sans-serif;
 
 @media screen and (max-width: 560px) {
     font-size: 30px;

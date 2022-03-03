@@ -16,7 +16,7 @@ export const ContainerBG = styled.div`
   justify-content: center;
   min-width: 480px;
   min-height: 909px;
-  padding:100px;
+  
 `;
 
 //OURPARTNER SECTION =============================================================
@@ -24,14 +24,18 @@ export const ContainerBG = styled.div`
 
 export const CarouselDiv = styled.div `
  
-  
+ padding:100px;
+
+ @media screen and (max-width: 560px) {
+    padding: 0px;
+  }
 `
 
 export const OurPartnerTitleDIV = styled.div`
- margin-left:600px;
-
-
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:25px;
 `;
 export const OurPartnerTitle = styled.h1`
  font-size: 75px;
@@ -42,7 +46,7 @@ export const OurPartnerTitle = styled.h1`
 
 
  @media screen and (max-width: 560px) {
-    font-size: 65px;
+    font-size: 40px;
   }
 `
 //FIRST PARTNER ===========================
@@ -62,7 +66,7 @@ export const TitleDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 200px;
   margin-left:40px;
 `;
 export const Title = styled.h1`

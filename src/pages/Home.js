@@ -7,7 +7,7 @@ import { Carousel } from 'react-bootstrap';
 
 import { Container,MainWrapper, ContainerLeft,ContainerRight, DescriptionDiv, TitleDiv, Title, Description
 , ContainerAll, ButtonDiv, Button1, CategoriesBG, PartnerBG, IconDiv, Icon,
-Prod2Div, Prod3Div,Prod4Div, Prod5Div,Prod6Div,Prod7Div, Prod1Div, CategoriesDiv, CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv} from './elements-pages/HomeElements';
+Prod2Div, Prod3Div,Prod4Div, Prod5Div,Prod6Div,Prod7Div, Prod1Div, CategoriesDiv, CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv, DivIcon} from './elements-pages/HomeElements';
 import { IMAGES } from '../navs/assets';
 import Navbar from '../navs/Headers/Navbar';
 
@@ -79,7 +79,8 @@ const Home = () => {
          <CategoriesTitle>Categories</CategoriesTitle>
       </CategoriesDiv>
 
-      <IconDiv>
+<DivIcon>
+     <IconDiv>
               <Prod1Div >
                 
                 <Icon src={cardData[3].icon} />
@@ -87,7 +88,7 @@ const Home = () => {
       </IconDiv>
 
       
-      <IconDiv>
+    <IconDiv>
             <Prod2Div>
                 <Icon src={cardData[1].icon} />
 
@@ -103,13 +104,6 @@ const Home = () => {
              
       </IconDiv>
 
-      {/* <IconDiv>
-            <Prod4Div>
-                <Icon src={cardData[3].icon} />
-
-            </Prod4Div>
-             
-      </IconDiv> */}
 
       <IconDiv>
          <Link to='/Categories/Digging'>
@@ -129,14 +123,7 @@ const Home = () => {
              </Link>
       </IconDiv>
 
-      {/* <IconDiv>
-            <Prod7Div>
-                <Icon src={cardData[6].icon} />
-
-            </Prod7Div>
-             
-      </IconDiv> */}
-
+</DivIcon>
 
      
        </CategoriesBG>
@@ -166,7 +153,7 @@ const Home = () => {
   <Carousel.Item>
     <img
    
-      
+      className="d-block w-100" 
       src={cardData[8].icon}
       alt="Second slide"
     />

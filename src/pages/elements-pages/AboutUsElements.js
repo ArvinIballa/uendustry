@@ -16,6 +16,7 @@ export const ContainerBG = styled.div`
   justify-content: center;
   min-width: 480px;
   min-height: 1000px;
+ 
 `;
 
 
@@ -27,6 +28,16 @@ export const ContainerDiv = styled.div`
   min-width: 1500px;
   min-height: 800px;
   padding:40px;
+
+  @media screen and (max-width: 560px) {
+  min-width: 40px;
+  min-height: 50px;
+  }
+  @media screen and (max-width: 1600px) {
+  min-width: 300px;
+  min-height: 500px;
+  }
+
 `;
 
 // ICON POSITIONS ========================================================================
@@ -44,14 +55,21 @@ export const AboutUsTitle = styled.h1`
  font-size:75px;
  margin-bottom:10px;
  font-family: 'Work Sans', sans-serif;
+
+ @media screen and (max-width: 560px) {
+  font-size:45px;
+    }
  
 `;
 
-export const AboutUsDescription = styled.div`
+export const AboutUsDescription = styled.p`
 
  font-size:35px;
  margin-bottom:10px;
  
+ @media screen and (max-width: 560px) {
+  font-size:25px;
+    }
 `;
 
 
