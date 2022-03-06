@@ -38,9 +38,13 @@
   font-size: 18px;
   cursor: pointer;
   margin-right: 20px;
+  font-family: "Roboto", sans-serif;
 }
 .navbarMenuText1:hover {
   color: black;
+}
+.navbarMenuText1 a {
+  font-family: "Roboto", sans-serif;
 }
 
 .navbarMenuText2 {
@@ -52,8 +56,12 @@
   border: none;
   font-size: 18px;
   color: #fff;
+
   cursor: pointer;
   background-color: #888888;
+}
+.navbarMenuText2 a {
+  font-family: "Roboto", sans-serif;
 }
 .navbarMenuText2:hover {
   color: black;

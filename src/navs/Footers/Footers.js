@@ -16,31 +16,47 @@ const Footer = () => {
    ]
 
   return (
-    <footer className="footer" fluid >
-    <div className='label-div'>
-               <label className='label'>Register Now</label>
-                           <div className="wrap">
-                                 <div className="search">
-                                    <input type="text" className="searchTerm" placeholder="Enter Email"/>
-                                    <button type="submit" className="searchButton">
-                                    <i className="fa fa-search"></i>
-                                 </button>
-                                 </div>
-                           </div>    
-   </div>
-   <div className='footer-div'>
-         <img src={UEndustryLogo} className='footerLogo'></img>
-         <p className='iconText ' style={{fontFamily: 'Work Sans'}}>UE</p>
-         <p className='iconText2' style={{fontFamily: 'Work Sans'}}>ndustry</p>
-
-   <div className='rightsDiv'>         
-   <p className='rights'>All Rights Reserved. Company Name © 2022.</p>
-   </div>
-
-   </div>
-    
-      
-    </footer>
+   //  <!-- ------- Footer ----------- -->
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Adnroid and Ios Mobile Phone</p>
+                <div class="app-logo">
+                    <img src={IMAGES.playstore} alt=""/>
+                    <img src={IMAGES.appstore} alt=""/>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src={IMAGES.icon} alt="" />
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut doloribus, corporis repellendus corrupti eos laborum totam praesentium, 
+                    ab voluptatibus dicta perspiciatis.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+         
+        <p class="copyright">Copyright 2022 -  UEndustry</p>
+    </div>
+</div>
   );
 };
 

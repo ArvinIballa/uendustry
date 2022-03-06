@@ -23,11 +23,17 @@ export const ContainerBG = styled.div`
 
 
 export const CarouselDiv = styled.div `
- 
- padding:100px;
+ padding:60px;
+  height: 600px;
+  width: 1500px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color:white;
 
- @media screen and (max-width: 560px) {
-    padding: 0px;
+
+  
+ @media screen and (max-width: 1600px) {
+  width: 1200px;
   }
 `
 
@@ -37,8 +43,21 @@ export const OurPartnerTitleDIV = styled.div`
   justify-content: center;
   margin-top:25px;
 `;
+export const CarouselItemDiv = styled.div`
+display:flex;
+flex-direction:row
+`
+
+export const Carouselp = styled.p `
+text-align:left;
+font-family: 'Roboto', sans-serif;
+font-size:20px;
+@media screen and (max-width: 800px) {
+  font-size:15px;
+  }
+`
 export const OurPartnerTitle = styled.h1`
- font-size: 75px;
+ font-size: 45px;
  color:#1c53ba; 
  font-family: 'Work Sans', sans-serif;
  

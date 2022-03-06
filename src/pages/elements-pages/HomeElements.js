@@ -172,7 +172,7 @@ export const CategoriesDiv = styled.div`
 `
 
 export const CategoriesTitle = styled.h1`
- font-size: 60px;
+ font-size: 45px;
  color:#ffff;
  font-family: 'Work Sans', sans-serif;
 
@@ -198,7 +198,7 @@ export const IconDiv = styled.div`
 
 // ICON POSITIONS ========================================================================
 export const Icon = styled.img`
-  height: 380px;
+  height: 330px;
   width: 350px;
   object-fit: contain;
   cursor: pointer;
@@ -221,7 +221,7 @@ export const Prod1Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 450px;
+  right: 430px;
 
   transition: all 0.2s ease-in-out;
   @media screen and (max-width: 560px) {
@@ -236,7 +236,7 @@ export const Prod2Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: 175px;
+  right: 155px;
 
   transition: all 0.2s ease-in-out;
   @media screen and (max-width: 560px) {
@@ -250,7 +250,7 @@ export const Prod3Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: 130px;
-  right: -100px;
+  right: -120px;
   transition: all 0.2s ease-in-out;
   @media screen and (max-width: 560px) {
     bottom: 100px;
@@ -258,14 +258,18 @@ export const Prod3Div = styled.div`
 }
 `;
 
-// export const Prod4Div = styled.div`
-//   height: 180px;
-//   width: 175px;
-//   position: absolute;
-//   bottom: 100px;
-//   right: -100px;
-//   transition: all 0.2s ease-in-out;
-// `;
+export const Prod4Div = styled.div`
+  height: 180px;
+  width: 175px;
+  position: absolute;
+  bottom: -250px;
+  right: 430px;
+  transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 560px) {
+  bottom: -100px;
+  right: 260px;
+  }
+`;
 
 
 export const Prod5Div = styled.div`
@@ -273,11 +277,11 @@ export const Prod5Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 325px;
+  right: 155px;
   transition: all 0.2s ease-in-out;
   @media screen and (max-width: 560px) {
     bottom: -100px;
-    right: 180px;
+    right: 110px
 }
 `;
 
@@ -288,11 +292,11 @@ export const Prod6Div = styled.div`
   width: 175px;
   position: absolute;
   bottom: -250px;
-  right: 50px;
+  right: -120px;
   transition: all 0.2s ease-in-out;
   @media screen and (max-width: 560px) {
     bottom: -100px;
-    right: 30px;
+    right: -40px;
 }
 `;
 
@@ -325,20 +329,35 @@ export const PartnerBG = styled.div`
 
 export const CarouselDiv = styled.div `
   padding:60px;
+  height: 600px;
+  width: 1500px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color:white;
+
   
+ @media screen and (max-width: 600px) {
+  height: 500px;
+  width: 400px;
+  }
+  
+`
+export const Carouselp = styled.p `
+text-align:center;
+font-family: 'Roboto', sans-serif;
 `
 
 export const OurPartnerTitleDIV = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:25px;
+  margin-top:60px;
 
 
   
 `;
 export const OurPartnerTitle = styled.h1`
- font-size: 55px;
+ font-size: 45px;
  color:#1c53ba;
  font-family: 'Work Sans', sans-serif;
  

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import Headers from '../navs/Headers/Headers';
 import Footers from '../navs/Footers/Footers';
 
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-grid-carousel'
 
 import { Container,MainWrapper, ContainerLeft,ContainerRight, DescriptionDiv, TitleDiv, Title, Description
 , ContainerAll, ButtonDiv, Button1, CategoriesBG, PartnerBG, IconDiv, Icon,
-Prod2Div, Prod3Div,Prod4Div, Prod5Div,Prod6Div,Prod7Div, Prod1Div, CategoriesDiv, CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv, DivIcon} from './elements-pages/HomeElements';
+Prod2Div, Prod3Div,Prod4Div, Prod5Div,Prod6Div,Prod7Div, Prod1Div, CategoriesDiv, CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv, DivIcon, Carouselp} from './elements-pages/HomeElements';
 import { IMAGES } from '../navs/assets';
 import Navbar from '../navs/Headers/Navbar';
 
@@ -104,6 +104,15 @@ const Home = () => {
              
       </IconDiv>
 
+      <IconDiv>
+         <Link to='/Categories/Digging'>
+            <Prod4Div>
+                <Icon src={cardData[1].icon} />
+
+            </Prod4Div>
+         </Link>
+      </IconDiv>
+
 
       <IconDiv>
          <Link to='/Categories/Digging'>
@@ -136,47 +145,39 @@ const Home = () => {
          <OurPartnerTitle >OUR PARTNERS</OurPartnerTitle>
          </OurPartnerTitleDIV>
       <CarouselDiv>
-   <Carousel controls={false} >
+      <Carousel cols={3} rows={1} gap={10} loop autoplay={10000} mobileBreakpoint={600} containerStyle={{padding:100 }}>
+                        <Carousel.Item >
+                          <img width="100%" src={IMAGES.icon} />
+                          <Carouselp>Lorem ipsum Company 1</Carouselp>
+                        
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img width="100%" src={IMAGES.icon}/>
+                          <Carouselp>Lorem ipsum Company 2</Carouselp>
+                        </Carousel.Item>
 
+                        <Carousel.Item >
+                          <img width="100%" src={IMAGES.icon} />
+                          <Carouselp>Lorem ipsum Company 3</Carouselp>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                          <img width="100%" src={IMAGES.icon} />
+                          <Carouselp>Lorem ipsum Company 4</Carouselp>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                          <img width="100%" src={IMAGES.icon} />
+                          <Carouselp>Lorem ipsum Company 5</Carouselp>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                          <img width="100%" src={IMAGES.icon} />
+                          <Carouselp>Lorem ipsum Company 6</Carouselp>
+                        </Carousel.Item>
+
+                
+            </Carousel>
    
-  <Carousel.Item>
-    <img
-     className="d-block w-100" 
-      src={cardData[8].icon}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-   
-      className="d-block w-100" 
-      src={cardData[8].icon}
-      alt="Second slide"
-    />
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100" 
-      src={cardData[8].icon}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-</CarouselDiv>
+      </CarouselDiv>
 </div>
 
 

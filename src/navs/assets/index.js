@@ -37,6 +37,9 @@ import about_us_bg from './images/about_us_bg.jpg'
 import categories_bg from './images/categories_bg.jpg'
 import our_partners_bg from './images/our_partners_bg.jpg'
 
+import appstore from './images/UEndustry ASSET/app-store.png'
+import playstore from './images/UEndustry ASSET/play-store.png'
+
 export const IMAGES ={
 
 about_us_bg,
@@ -75,5 +78,7 @@ Lorem_TrenchShovel,
 Power_Shovel,
 TreePlanting_Shovel,
 Trench_Shovel,
+appstore,
+playstore
 
 }

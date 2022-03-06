@@ -77,8 +77,8 @@ export const ImageLeft = styled.img`
 
 export const ImageLeftDesc = styled.h2`
  text-align:left;
- font-size:20px;
- padding-bottom:30px;
+ font-size:18px;
+ padding:10px 10px ;
  border-bottom: 2px solid gray;
  font-family: 'Roboto', sans-serif;
  @media screen and (max-width: 560px) {
@@ -110,7 +110,7 @@ export const Image2Left = styled.img`
 
 export const Image2LeftDesc = styled.p`
  text-align:left;
- font-size:20px;
+ font-size:18px;
  font-family: 'Roboto', sans-serif;
  @media screen and (max-width: 560px) {
   font-size:15px;
@@ -140,7 +140,7 @@ export const Image3Left = styled.img`
 
 export const Image3LeftDesc = styled.p`
  text-align:left;
- font-size:20px;
+ font-size:18px;
  font-family: 'Roboto', sans-serif;
  @media screen and (max-width: 560px) {
   font-size:15px;
@@ -170,7 +170,7 @@ export const Image4Left = styled.img`
 
 export const Image4LeftDesc = styled.p`
  text-align:left;
- font-size:20px;
+ font-size:18px;
  font-family: 'Roboto', sans-serif;
  @media screen and (max-width: 560px) {
   font-size:15px;
@@ -260,13 +260,14 @@ export const DescRightDiv = styled.div`
 `;
 
 export const DescRight = styled.p`
-  font-size:20px;
+  font-size:18px;
+  padding:10px 10px;
   font-family: 'Roboto', sans-serif;
   text-align:left;
   cursor: default;
 
   @media screen and (max-width: 560px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 
 `;

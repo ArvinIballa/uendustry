@@ -52,7 +52,7 @@ export const Icon = styled.img`
 
 export const AboutUsTitle = styled.h1`
  color:#1c53ba;
- font-size:75px;
+ font-size:45px;
  margin-bottom:10px;
  font-family: 'Work Sans', sans-serif;
 
@@ -63,7 +63,7 @@ export const AboutUsTitle = styled.h1`
 `;
 
 export const AboutUsDescription = styled.p`
-
+font-family: 'Roboto', sans-serif;
  font-size:35px;
  margin-bottom:10px;
  

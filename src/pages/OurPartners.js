@@ -1,8 +1,8 @@
 import React from 'react';
 import Footers from '../navs/Footers/Footers';
 import Headers from '../navs/Headers/Headers';
-import { Carousel } from 'react-bootstrap';
-import { ContainerBG,CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv, ContainerLeft, TitleDiv, Title, ImageLeft, ImageLeftDesc, Container2nd} from './elements-pages/OurPartnerElements';
+import Carousel from 'react-grid-carousel'
+import { ContainerBG,CategoriesTitle, OurPartnerTitle, OurPartnerTitleDIV, CarouselDiv, ContainerLeft, TitleDiv, Title, ImageLeft, ImageLeftDesc, Container2nd, Carouselp, CarouselItemDiv} from './elements-pages/OurPartnerElements';
 import { IMAGES } from '../navs/assets';
 import Navbar from '../navs/Headers/Navbar';
  const OurPartners = () => {
@@ -29,47 +29,67 @@ import Navbar from '../navs/Headers/Navbar';
                                 <OurPartnerTitleDIV>
                                 <OurPartnerTitle >OUR PARTNERS</OurPartnerTitle>
                                 </OurPartnerTitleDIV>
-                            <CarouselDiv>
-                        <Carousel controls={false} >
+                        <CarouselDiv>
+                        <Carousel cols={1} rows={1} gap={10} loop autoplay={10000} mobileBreakpoint={600} >
+                        <Carousel.Item >
+                        <CarouselItemDiv>
+                          <img width="40%" src={IMAGES.icon} />
+                       
+                          <Carouselp>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                          sunt in culpa qui officia deserunt mollit anim id est laborum." <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</Carouselp>
 
+                          
+                          </CarouselItemDiv>
+                        </Carousel.Item>
+
+                        <Carousel.Item >
+                        <CarouselItemDiv>
+                          <img width="40%" src={IMAGES.icon} />
+                       
+                         
+                          <Carouselp>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                          sunt in culpa qui officia deserunt mollit anim id est laborum." <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</Carouselp>
+                          </CarouselItemDiv>
+                        </Carousel.Item>
+
+                        <Carousel.Item >
+                        <CarouselItemDiv>
+                          <img width="40%" src={IMAGES.icon} />
+                       
+                           
+                          <Carouselp>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                          sunt in culpa qui officia deserunt mollit anim id est laborum." <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</Carouselp>
+                          </CarouselItemDiv>
+                        </Carousel.Item>
+
+                        <Carousel.Item >
+                        <CarouselItemDiv>
+                          <img width="40%" src={IMAGES.icon} />
+                       
+                          <Carouselp>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                          sunt in culpa qui officia deserunt mollit anim id est laborum." <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</Carouselp>
+                          </CarouselItemDiv>
+                        </Carousel.Item>
+
+                        <Carousel.Item >
+                        <CarouselItemDiv>
+                          <img width="40%" src={IMAGES.icon} />
                         
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100" 
-                            src={cardData[8].icon}
-                            alt="First slide"
-                            />
-                            <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
+                          <Carouselp>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                          sunt in culpa qui officia deserunt mollit anim id est laborum." <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</Carouselp>
+                          </CarouselItemDiv>
                         </Carousel.Item>
-                        <Carousel.Item>
-                            <img
                         
-                            className="d-block w-100" 
-                            src={cardData[8].icon}
-                            alt="Second slide"
-                            />
+                    
 
-                            <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100" 
-                            src={cardData[8].icon}
-                            alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        </Carousel>
+                
+            </Carousel>
+                    
                         </CarouselDiv>
                         </div>
 
